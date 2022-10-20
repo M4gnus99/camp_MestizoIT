@@ -1,0 +1,819 @@
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  /**1rem = 10px**/
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.6rem;
+  line-height: 2;
+}
+
+/**Globales**/
+
+.contenedor {
+  max-width: 1200px;
+  width: 95%;
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Cinzel", serif;
+}
+
+h1 {
+  font-size: 4.8rem;
+}
+
+h2 {
+  font-size: 4rem;
+}
+
+h3 {
+  font-size: 3.2rem;
+}
+
+h4 {
+  font-size: 2.8rem;
+}
+
+img {
+  max-width: 100%;
+}
+
+/**Utilidades**/
+
+.centrar-texto {
+  text-align: center;
+}
+
+.no-margin {
+  margin: 0;
+}
+
+.columnas{
+  column-count: 2;
+}
+.flex{
+  display: flex;
+}
+
+.btn {
+  background-color: black;
+  text-align: center;
+  padding: 1rem 3rem;
+  color: #ffffff;
+  text-decoration: none;
+}
+.btn2{
+  color: #ffffff;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 1.8rem;
+  padding: 1rem 3rem;
+  margin-top: 3rem;
+  display: inline-block;
+  text-align: center;
+  border: none;
+}
+.btn:hover {
+  cursor:pointer;
+}
+.btn2:hover {
+  cursor:pointer;
+}
+.boton-verde{
+  
+  background-color: #71B100;
+}
+
+.paginacion{
+  display: flex;
+  width: 100%;
+  height: 5rem;
+  justify-content: center;
+}
+.paginacion a{
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+.paginacion a:hover{
+  background-color: #4CAF50;
+  color: white;
+  border-radius: 5px;
+}
+
+/**Header**/
+
+.site-header {
+  background-image: url(https://fondosmil.com/fondo/31239.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 20rem;
+}
+
+.site-header a {
+  color: black;
+  text-decoration: none;
+}
+
+.site-header h1 {
+  text-align: center;
+  font-weight: 700;
+}
+.site-header2 {
+  background-image: url(../img/Bosque.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 20rem;
+}
+.site-header2 a {
+  text-decoration: none;
+  color: #ecb621;
+}
+
+.site-header2 h1 {
+  text-align: center;
+  font-weight: 700;
+  color: #ffffff;
+  text-shadow: -2px -2px 1px #000;
+
+
+}
+
+/**Navegacion**/
+
+.titulobarra{
+  display: flex;
+  justify-content: space-between;
+}
+.barra {
+  text-align: right;
+  font-family: "Cinzel", serif;
+}
+
+.navegacion {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navegacion a {
+  color: #000000;
+  text-decoration: none;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.navegacion a:hover {
+  color: #ffffff;
+}
+
+/*carrito de inicio de sesion*/
+.carritocompra {
+    text-align: right;
+}
+.carritocompra a{
+  color: #ffffff;
+  text-decoration: none;
+  text-align: center;
+  font-size: 2rem;
+}
+.carritocompra a:hover{
+  color: #ecb621;
+}
+
+/*barra de pagina inicio de sesion*/
+.navegacion2 {
+  background-color: #0000006e;
+  display: flex;
+  justify-content: space-between;
+ 
+}
+
+.navegacion2 a {
+  color: #ffffff;
+  text-decoration: none;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.navegacion2 a:hover {
+  color: #ecb621;
+}
+
+/**Bienvenida**/
+
+.seccion-bienvenida {
+  height: 40rem;
+}
+
+.contenido-bienvenida {
+  padding-top: 6rem;
+  background-color: #ffffff2a;
+}
+
+.contenido-bienvenida h2 {
+  margin-top: 0;
+  text-align: center;
+  color: #ecb621;
+  text-shadow: -2px -2px 1px #000;
+}
+
+.contenido-bienvenida blockquote {
+  position: relative;
+  font-weight: 300;
+  font-size: 2.2rem;
+  color: #ffffff;
+  text-shadow: -2px -2px 1px #000;
+}
+
+.contenido-bienvenida p {
+  color: #ecb621;
+  font-size: 3rem;
+  text-align: right;
+  margin-right: 5rem;
+  font-family: "Cinzel", serif;
+  font-weight: 600;
+  text-shadow: -2px -2px 1px #000;
+}
+
+/**Indice**/
+.indice{
+  display: flex;
+  font-size: 1.5rem;
+}
+.indice a{
+  color: #000;
+  text-decoration: none;
+}
+.indice a:hover{
+  color: #ffffff;
+}
+
+/**Contenido Principal**/
+
+.fondo {
+  width: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+  background-image: url(../img/Bosque.jpg);
+}
+.fondo2 {
+  height: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+  background-image: url(https://fondosmil.com/fondo/31239.jpg);
+}
+.contenido-principal {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.imagen-blog1 {
+  background-image: url(https://static01.nyt.com/images/2021/05/19/education/19educationbriefing-camp/19educationbriefing-camp-superJumbo.jpg);
+  height: 40rem;
+  background-position: center center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  padding-top: 15rem;
+  margin-top: 6rem;
+  margin-bottom: 4rem;
+}
+
+.imagen-blog2 {
+  background-image: url(https://static1.cbrimages.com/wordpress/wp-content/uploads/2017/04/Percy-Jackson.jpg);
+  height: 40rem;
+  background-position: center center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  padding-top: 15rem;
+  margin-top: 6rem;
+  margin-bottom: 4rem;
+}
+.imagen-blog3 {
+  background-image: url(../img/imagen\ libro.jpg);
+  height: 40rem;
+  background-position: center center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  padding-top: 15rem;
+  margin-top: 6rem;
+  margin-bottom: 4rem;
+}
+
+.contenido-blog {
+  background-color: rgba(0, 0, 0, 0.726);
+}
+
+.contenido-blog h3 {
+  color: #ffffff;
+}
+.contenido-blog p {
+  color: #ffffff;
+}
+
+/**Inicio de Sesion**/
+
+.ContenedorSesion{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 8rem;
+}
+
+.InicioSesion{
+   
+  background-color: #afacac54;
+  padding: 15px;
+    
+}
+.InicioSesion a{
+    color:black;
+    font-size: 1.8rem;
+}
+.InicioSesion a:hover{
+    color: #ffffff;
+}
+
+input[type="search"] {
+  border: none;
+  border-bottom: 2px solid #fff;
+  background: transparent;
+  outline: none;
+  height: 40px;
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+}
+
+.modificacion{
+  border: none;
+  border-bottom: 2px solid #fff;
+  background: transparent;
+  outline: none;
+  height: 40px;
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+}
+
+.Sesion[type="submit"] {
+  border: none;
+  outline: none;
+  height: 40px;
+  background: rgb(6, 119, 25);
+  color: #fff;
+  font-size: 18px;
+  border-radius: 20px;
+}
+
+.Sesion[type="submit"]:hover {
+  cursor: pointer;
+  background:#ffffff;
+  color: #000;
+}
+
+/* REGISTRARSE */
+.registrarse{
+   
+  background-color: #afacac54;
+  padding: 15px;
+    
+}
+.registrarse h3{
+  margin: auto;
+  text-align: center;
+}
+.btn-registro{
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+/**Tienda**/
+.contenedortienda{
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.contenedor-anuncios {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.anuncio {
+  flex: 0 0 calc(33.3% - 1rem);
+
+  background-color: #ffffffa9;
+  margin-bottom: 2rem;
+  width: 33.33%;
+}
+.anuncio img{
+  display: block;
+  margin: auto;
+  padding-top: 1rem;
+}
+.contenido-anuncios {
+  padding: 2rem;
+}
+.contenido-anuncios h3{
+  font-size: 2rem;
+}
+.contenido-anuncios h3, .contenido-anuncios p{
+  margin: 0;
+}
+.contenido-anuncios a:hover{
+  color: #71B100;
+}
+
+.btntienda {
+  background-color: black;
+  text-align: center;
+  padding: 1rem 3rem;
+  color: #ffffff;
+  text-decoration: none;
+}
+.btntienda a{
+  color: white;
+}
+
+.zonadecompra{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ background-color: #ffffffa9;
+ margin-top: 3rem;
+}
+
+.prueba{
+  padding: 3rem;
+  flex: 0 0 calc(50% - 1rem);
+  
+}
+
+/**Contacto**/
+
+.redes-sociales{
+  display: flex;
+}
+.redes-sociales a{
+  margin: auto
+}
+.contenedor-contacto{
+  max-width: 800px;
+  margin: auto;
+}
+.contacto p{
+  font-size: 1.4rem;
+  color: #4f4f4f;
+  margin: 2rem 0 0 0;
+}
+legend{
+  font-size: 2rem;
+  color: #4f4f4f;
+}
+
+.modificacion2{
+  padding: 1rem;
+  display: block;
+  width: 100%;
+  background-color: #e1e1e1;
+  margin-bottom: 2rem;
+  border: none;
+  border-radius: 1rem;
+}
+
+textarea {
+  height: 20rem;
+}
+
+/**Noticias**/
+
+.contenedor-noticias{
+  max-width: 870px;
+  margin: auto;
+  flex-direction: column;
+  padding: 0;
+}
+
+.contenido-noticias{
+  max-width: 870px;
+  margin: auto;
+  flex-direction: column;
+  padding: 0;
+  text-align: center;
+  background-color: #ffffffb4;
+  padding-bottom: 5rem;
+  padding-top: 3rem;
+}
+.contenido-noticias p{
+  max-width: 550px;
+  margin: 0 auto;
+}
+.noticia{
+  display: flex;
+  margin-bottom: 4rem;
+  margin-top: 2rem;
+  
+}
+.texto-noticia{
+ max-width: 50%;
+ margin: auto;
+}
+.texto-noticia h4{
+    font-size: 2rem;
+    margin:auto;
+    color: rgb(0, 0, 0);
+    
+}
+.texto-noticia p{
+  font-size: 1.3rem;
+}
+
+.btn-noticias{
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  padding: 0rem 5rem;
+  background-color: #000000;
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+}
+
+/**Nosotros**/
+
+.contenedor-nosotros{
+  max-width: 870px;
+  margin: auto;
+  padding: 0;
+  padding-bottom: 3rem;
+}
+
+.link{
+  text-decoration: none; 
+  color: black;
+}
+
+.link p:hover{
+  color: #f3f1ec;
+}
+
+
+/**Blog**/
+
+.grid{
+  display: grid;
+  grid-template-columns: 70% 30%;
+  padding: 2rem;
+}
+
+.columna-1{
+  border-right: 1px ;
+}
+.columna-1 a{
+  text-decoration: none;
+  color: #000;
+}
+.columna-2{
+  padding-left: 4rem;
+  
+}
+.lista{
+  background-color: #f3f1ec;
+}
+.lista p{
+  background: #e69d17;
+  text-align: center;
+}
+.lista li{
+  padding-left: 1rem;
+}
+.lista a{
+  text-decoration: none;
+  color: #000;
+}
+.lista a:hover{
+  color: #e69d17;
+}
+.contenedor-blog{
+  width: 100%;
+  background-color: #fdfdfdc2;
+  border-radius: 10px;
+  padding: 2rem;
+  margin-bottom: 4rem;
+}
+
+.contenedor-comentarios{
+  width: 100%;
+  background-color: #fdfdfdc2;
+  padding: 2rem;
+  border-radius: 10px;
+  margin-bottom: 4rem;
+}
+
+/**Actividades**/
+
+.grid-actividades{
+  display: grid;
+  grid-template-columns: 35% 35% 30%;
+  padding: 2rem;
+}
+.columna div:hover{
+  border-style: outset;
+}
+
+.columna-3{
+  padding-left: 4rem;
+  border-left: 1px solid black;
+  
+}
+.contenido-actividad{
+  width: 75%;
+  background-color: #eeeeee98;
+  height: 35rem;
+  border-radius: 10px;
+  margin: auto;
+  margin-top: 2rem;
+}
+.contenido-actividad a{
+  text-decoration: none;
+  color: black;
+}
+.contenido-actividad a:hover{
+  color: #e69d17;
+}
+.contenido-actividad img{
+  max-width: 90%;
+  display: block;
+  margin: auto;
+  padding-top: 1rem;
+}
+.contenido-actividad h4{
+  font-size: 2rem;
+  text-align: center;
+}
+.texto-actividad{
+    width: 100%;
+    padding: 2rem;
+    margin-bottom: 4rem;
+}
+
+/**Wiki**/
+.contenedor-barra-wiki{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: #000;
+}
+.barrawiki{
+  width: 500px;
+  
+}
+.barrawiki ul,ol{
+  list-style: none;
+}
+
+.nav li a{
+  background-color: #000;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 10px 10px;
+  display: block;
+  
+  
+}
+.nav li a:hover{
+  background-color: #434343;
+}
+.nav >li{
+  float: left;
+}
+.nav li ul{
+  display: none;
+  position: absolute;
+  min-width: 140px;
+
+}
+.nav li:hover >ul{
+  display: block;
+}
+.nav li ul li{
+  position: relative;
+}
+.nav li ul li ul {
+  right: -22rem ;
+  top: 0px;
+}
+.nav .heroes  li ul li ul {
+  right: -10rem ;
+  top: 0px;
+}
+
+.grid-wiki{
+  display: grid;
+  grid-template-columns: 70% 30%;
+  padding: 2rem;
+}
+.grid-personajes{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  padding: 2rem;
+}
+.grid-personajes-contenido{
+  display: grid;
+  grid-template-columns: 60% 40%;
+  padding: 0;
+}
+
+.ficha-personajes{
+  width: 75%;
+  background-color: #eeeeee98;
+  height: 35rem;
+  border-radius: 10px;
+  margin: auto;
+  margin-top: 2rem;
+}
+.ficha-personajes img{
+  max-width: 90%;
+  display: block;
+  margin: auto;
+  padding-top: 1rem;
+}
+.ficha-personajes a{
+  text-decoration: none;
+  color: black;
+}
+.ficha-personajes a:hover{
+  color: #e69d17;
+}
+.ficha-personajes h4{
+  font-size: 2rem;
+  text-align: center;
+}
+.tabla-info h3{
+  background: rgb(73, 181, 214);
+  margin: 0;
+  text-align: center;
+  font-size: 2rem;
+}
+.tabla-info h4{
+  background: rgb(73, 181, 214);
+  margin: 0;
+  text-align: center;
+  font-size: 2rem;
+  
+}
+.tabla-info p{
+  margin: auto;
+  padding-left: 1rem;
+}
+
+
+/**Footer**/
+.site-footer {
+  background-color: #000000;
+  margin-top: 4rem;
+  padding: 3rem;
+  bottom: 0;
+  width: 100%;
+}
+.site-footer p {
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: 20;
+  font-family: "PT Sans", sans-serif;
+  text-align: center;
+}
+
+.barrafooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.barrafooter a {
+  color: #ffffff;
+  padding-left: 3rem;
+}
